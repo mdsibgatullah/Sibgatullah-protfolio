@@ -1,6 +1,12 @@
 :root {
     --primary-text: #ececec;
     --theme-color: #FF5722;
+    --body-color: #1a1a1a;
+}
+.light_color{
+    --primary-text: #1b1b1b;
+    --theme-color: #FF5722;
+    --body-color: #ebebeb;
 }
 *{
     margin: 0;
@@ -19,13 +25,24 @@ img {
 }
 body {
     color: var(--primary-text);
-    background-color: #292929;
+    background-color: var(--body-color);
 }
 .themeColor {
     color: var(--theme-color);
+    text-decoration: underline;
+}
+.iconLN,.iconLN2{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+.iconLN2 {
+    display: none;
 }
 .wrapper {
-    background-color: #222222;
+    background-color: var(--body-color);
     background-image: url(../img/sibgatullah3.jpg);
     background-position: right;
     background-size: 500px;
@@ -39,13 +56,27 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #00000069;
+    background-color: var(--body-color);
+    opacity: .4;
     z-index: -1;
     right: 0;
 }
-header nav {
+.wrapper header nav {
     padding: 20px 0;
     margin-bottom: 25px;
+}
+header nav {
+    padding: 20px 0;
+    margin-top: 25px;
+}
+.scrollMenu {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background: var(--body-color);
+    width: 100%;
+    left: 0;
+    z-index: 1;
 }
 header nav ul{
     display: flex;
@@ -62,7 +93,7 @@ nav a,.nav_toggle,.nav_toggle2 {
     cursor: pointer;
 }
 nav a:hover {
-    background-color: gray;
+    background-color: #333333;
     color: var(--theme-color);
 }
 .nav_toggle2,.nav_toggle {
@@ -80,7 +111,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 50px);
-    color: #e2f2ff;
+    color: var(--primary-text);
     margin-right: 25%;
     
 }
@@ -90,7 +121,19 @@ nav a:hover {
 h2 {
     font-size: 80px;
     text-align: center;
+    position: relative;
 }
+/* h2::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: var(--primary-text);
+    box-shadow: 0 1px 3px var(--primary-text) inset;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 /* h2 span, .home p span {
     color: var(--theme-color);
 } */
@@ -116,10 +159,10 @@ h2 {
     padding: 0 15px;
 }
 .about {
-    padding-top: 50px;
-    background-color: #292929;
+    /* padding-top: 20px; */
+    background-color: var(--body-color);
     min-height: 100vh;
-    color: white;
+    color: var(--primary-text);
     /* text-align: center; */
 }
 .about_data {
@@ -167,13 +210,19 @@ p {
 }
 /* Protfolio */
 .protfolio {
-    background-color: #292929;
+    background-color: var(--body-color);
     min-height: 100%;
 }
 .protfolio_content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+.protfolio_item {
+    background-color: var(--body-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--primary-text);
 }
 /* contact */
 .contact .protfolio_content {
@@ -182,15 +231,11 @@ p {
     margin-top: 50px;
 }
 .contact .protfolio_item {
-    background-color: #383838;
+    background-color: var(--body-color);
     width: 310px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 30px;
-    padding-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px var(--primary-text);
-    position: relative;
+    padding: 0px 0px 20px;
 }
 .section_icon  {
     padding: 12px 14px;
@@ -205,13 +250,17 @@ p {
 }
 .contact_data {
     max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 1px 1px 4px var(--primary-text);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+
     display: grid;
     grid-template-columns: repeat(2, auto);
     align-items: center;
-    /* justify-content: space-between; */
     gap: 20px;
-    width: 100%;
-    margin-top: 50px;
 }
 .contact_text {
     width: 370px;
@@ -276,7 +325,7 @@ input[type="submit"]{
     }
     .contact .protfolio_item {
         width: 230px;
-        padding: 0px 0px 5px;
+        /* padding: 0px 0px 5px; */
     }
 }
 @media screen and (max-width: 768px){
@@ -284,7 +333,7 @@ input[type="submit"]{
         padding: 0 5px;
     }
     header nav {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
     header nav a {
         padding: 10px 10px;
@@ -320,6 +369,7 @@ input[type="submit"]{
         margin: 0 auto;
     }
     .contact_text {
+        width: 100%;
         margin-top: 20px;
         margin: 0 auto;
         text-align: center;
@@ -358,6 +408,7 @@ input[type="submit"]{
 
         background-color: #383838;
         transition: .5s;
+        z-index: 1;
     }
     header nav ul.active {
         width: 200px;
@@ -379,6 +430,7 @@ input[type="submit"]{
         right: 20px;
         display: inline-block;
         padding: 5px 10px;
+        z-index: 1;
     }
     .nav_toggle2 {
         display: none;
@@ -387,5 +439,14 @@ input[type="submit"]{
         width: 100%;
         margin-bottom: 20px;
         padding-bottom: 20px;
+    }
+
+    /* light or light */
+    .iconLN,.iconLN2{
+        left: 20px;
+        z-index: 1;
+    }
+    .scrollMenu {
+        background-color: transparent;
     }
 }
