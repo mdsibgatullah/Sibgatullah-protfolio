@@ -14,7 +14,7 @@ qs(".nav_toggle2").addEventListener("click",() => {
 
 // night or Light
 function iconLight(){
-    qs("body").classList.add("light_color");
+    qs("body").classList.add('light_color');
     qs(".iconLN").style.display = "none";
     qs(".iconLN2").style.display = "block";
 }

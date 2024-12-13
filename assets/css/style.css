@@ -406,7 +406,7 @@ input[type="submit"]{
         flex-direction: column;
         gap: 5px;
 
-        background-color: #383838;
+        background-color: var(--body-color);
         transition: .5s;
         z-index: 1;
     }
@@ -422,7 +422,7 @@ input[type="submit"]{
         color: var(--primary-text);
     }
     header nav ul li a:hover {
-        color: var(--primary-text);
+        color: white;
     }
     .nav_toggle,.nav_toggle2 {
         position: fixed;
