@@ -44,13 +44,17 @@ body {
 .wrapper {
     background-color: var(--body-color);
     background-image: url(../img/sibgatullah.png);
-    background-position: right;
-    background-size: 600px;
+    background-position-x: 100%;
+    background-size: 100vh;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
     z-index: 1;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
 }
 .overlay {
     position: absolute;
@@ -107,13 +111,8 @@ nav a:hover {
 }
 /* Home */
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 50px);
     color: var(--primary-text);
     margin-right: 25%;
-    
 }
 .home_data {
     text-align: center;
@@ -139,9 +138,10 @@ h2 {
 } */
 .home p {
     font-size: 25px;
-    margin: 15px 0;
+    margin: 15px auto;
     margin-bottom: 40px;
-
+    line-height: 30px;
+    max-width: 530px;
 }
 .btn {
     margin: 30px 0;
@@ -178,10 +178,14 @@ h2 {
 p {
     font-size: 20px;
 }
+.my_description{
+    text-align: justify;
+    line-height: 25px;
+}
 .me_dtl {
     display: flex;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
     line-height: 1.6;
 }
 /* Skills */
@@ -191,6 +195,11 @@ p {
     /* border: 1px dotted var(--primary-text); */
     box-shadow: 0 0 4px var(--primary-text) inset;
     margin: 5px 0 30px;
+}
+.skill_range{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 .skill_ber span {
     display: block;
@@ -220,6 +229,7 @@ p {
     padding-bottom: 30px;
 }
 .protfolio_item {
+    height: 200px;
     background-color: var(--body-color);
     border-radius: 5px;
     transition: .4s;
@@ -229,7 +239,8 @@ p {
     box-shadow: 0px 0px 8px var(--primary-text);
 }
 .protfolio_item a img{
-    height: 100% !important;
+    object-fit: cover;
+    height: 100%;
     cursor: pointer;
 }
 /* contact */
@@ -244,6 +255,7 @@ p {
     margin: 0 auto;
     text-align: center;
     padding: 0px 0px 20px;
+    border: 1px solid #8080803d;
 }
 .section_icon  {
     padding: 12px 14px;
@@ -325,7 +337,10 @@ input[type="submit"]{
     h2{
         font-size: 50px;
     }
-    .about_data img {
+    .about_data{
+        gap: 0;
+    }
+    .about_data .img {
         display: none;
     }
     .protfolio_content {
@@ -357,7 +372,7 @@ input[type="submit"]{
     }
     .me_dtl {
         gap: 15px;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .protfolio_content {
         grid-template-columns: 1fr 1fr;
@@ -389,6 +404,15 @@ input[type="submit"]{
         justify-content: center;
     }
 
+}
+@media screen and (max-width: 576px){
+    .wrapper{
+        background-position: center;
+    }
+    .skill_range{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
 }
 @media screen and (max-width: 425px){
     /* about  */
