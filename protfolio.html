@@ -1,102 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Protfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <section class="protfolio">
-        <div class="iconLN" onclick="iconLight()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
-                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      <div class="iconLN" onclick="iconLight()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-brightness-high-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+          />
+        </svg>
+      </div>
+      <div class="iconLN2" onclick="iconNight()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-moon-stars-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+          />
+          <path
+            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+          />
+        </svg>
+      </div>
+      <div class="container">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="protfolio.html">Protfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog">Blog</a></li>
+            </ul>
+            <div class="nav_toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
               </svg>
-        </div>
-        <div class="iconLN2" onclick="iconNight()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-              </svg>
-        </div>
-        <div class="container">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="protfolio.html">Protfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="blog">Blog</a></li>
-                    </ul>
-                    <div class="nav_toggle">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    </div>
-                    <div class="nav_toggle2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                    </div>
-                </nav>
-            </header>
-            <br>
-            <h2><span class="themeColor">My</span> Protfolio</h2>
-            <br>
-            <br>
-            <div class="protfolio_content">
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/E-foundation/">
-                        <img src="assets/img/protfolio.png" alt="Bondu IT">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://github.com/mdsibgatullah">
-                        <img src="assets/img/protfolio2.png" alt="Amazon">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/Microsoft-store/">
-                        <img src="assets/img/protfolio3.png" alt="store">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/search-engine/">
-                        <img src="assets/img/protfolio4.png" alt="search engine">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/Oxhen/">
-                        <img src="assets/img/protfolio5.png" alt="Business">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://github.com/mdsibgatullah">
-                        <img src="assets/img/protfolio6.png" alt="">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/eCosmetics/">
-                        <img src="assets/img/protfolio7.png" alt="Anaysa">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/eCosmetics/">
-                        <img src="assets/img/protfolio8.png" alt="Anaysa">
-                    </a>
-                </div>
-                <div class="protfolio_item">
-                    <a href="https://mdsibgatullah.github.io/FlyShopBd-ecommerce/">
-                        <img src="assets/img/flyshopbd.png" alt="flyshopbd">
-                    </a>
-                </div>
             </div>
+            <div class="nav_toggle2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </nav>
+        </header>
+        <br />
+        <h2><span class="themeColor">My</span> Protfolio</h2>
+        <br />
+        <br />
+        <div class="protfolio_content">
+          <!-- Preject-E foundation  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+              <a href="https://mdsibgatullah.github.io/E-foundation/">
+                <img src="assets/img/protfolio.png" alt="Bondu IT" />
+              </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">E-Foundation Project</span
+              ><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/E-foundation/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/E-foundation"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Preject-Cosmetics  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+              <a href="https://mdsibgatullah.github.io/eCosmetics/">
+                <img src="assets/img/protfolio8.png" alt="Bondu IT" />
+              </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">E-Cosmetics</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                CSS Preprocessor: SCSS/SASS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/eCosmetics/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/eCosmetics"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Theme  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mavro-v1.myshopify.com/">
+              <img src="assets/img/mavro.png" alt="shopify" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Shopify Theme Created</span><br />
+              <small>
+                Frontend Tools: HTML, CSS, SASS <br />
+                Programming Language: JavaScript <br>
+                Templating  Language: Liquid
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mavro-v1.myshopify.com/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Theme Doc  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mdsibgatullah.github.io/Marvo-docs-v---0.1/">
+              <img src="assets/img/mavro-doc.png" alt="shopify" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Shopify Theme Create</span><br />
+              <small>
+                Frontend Tools: HTML, CSS, SASS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/Marvo-docs-v---0.1/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Marvo-docs-v---0.1"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Preject-BD-Tickit  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+              <a href="https://github.com/mdsibgatullah/Task">
+                <img src="assets/img/protfolio7.png" alt="flyshopbd" />
+              </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">BD Tickets</span><br />
+              <small>
+                Frontend Tools: HTML, CSS, SCSS/SASS <br />
+                Programming Language: JavaScript <br />
+                Frontend Framework: React <br />
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Task"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Task"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Preject-FlyShopBd  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+              <a href="https://mdsibgatullah.github.io/FlyShopBd-ecommerce/">
+                <img src="assets/img/flyshopbd.png" alt="flyshopbd" />
+              </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">FlyShop bd</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                CSS Preprocessor: SCSS/SASS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/FlyShopBd-ecommerce/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/FlyShopBd-ecommerce"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Microsoft  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+              <a href="https://mdsibgatullah.github.io/Microsoft-store/">
+              <img src="assets/img/protfolio3.png" alt="Amazon" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Microsoft Store</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/Microsoft-store/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Microsoft-store"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Search-engine  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mdsibgatullah.github.io/search-engine/">
+              <img src="assets/img/protfolio4.png" alt="search engine" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Search Engine</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/search-engine/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/search-engine"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Buddiness-Protfolio Oxhen -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mdsibgatullah.github.io/Oxhen/">
+              <img src="assets/img/protfolio5.png" alt="Business" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Buddiness Protfolio</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/Oxhen/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Oxhen"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project- OutDoor  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mdsibgatullah.github.io/Outdoor/">
+              <img src="assets/img/outdoor.png" alt="OutDoor" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">OutDoor</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript, JQuery
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/Outdoor/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/Outdoor"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-Funding  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://github.com/mdsibgatullah/funding">
+              <img src="assets/img/protfolio4.png" alt="search engine" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Funding</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript, Python
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/funding"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/funding"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project-keeron  -->
+          <div class="protfolio_item">
+            <div class="protfolio_item_img">
+            <a href="https://mdsibgatullah.github.io/keeron/">
+              <img src="assets/img/keeron.png" alt="search engine" />
+            </a>
+            </div>
+            <div class="portfolio_item_content">
+              <span class="themeColor pic_uppercase">Course Page</span><br />
+              <small>
+                Frontend Tools: HTML, CSS <br />
+                Programming Language: JavaScript
+              </small>
+
+              <ul class="pic_btn_group">
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://mdsibgatullah.github.io/keeron/"
+                    target="_blank"
+                  >
+                    <small>Live Preview</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="themeColor pic_uppercase"
+                    href="https://github.com/mdsibgatullah/keeron"
+                    target="_blank"
+                  >
+                    <small>GitHub</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
+      </div>
     </section>
     <script defer src="assets/js/custom.js"></script>
-</body>
+  </body>
 </html>
