@@ -191,6 +191,12 @@ p {
     margin-top: 40px;
     line-height: 1.6;
 }
+.home_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
 /* Skills */
 .skill_ber {
     width: 100%;
