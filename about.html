@@ -1,133 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My About</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="about">
-      <div class="iconLN" onclick="iconLight()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-brightness-high-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-          />
-        </svg>
-      </div>
-      <div class="iconLN2" onclick="iconNight()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-moon-stars-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-          />
-          <path
-            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
-          />
-        </svg>
-      </div>
-      <div class="container">
-        <header>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="protfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="blog">Blog</a></li>
-            </ul>
-            <div class="nav_toggle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </div>
-            <div class="nav_toggle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="bi bi-x"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-          </nav>
-        </header>
-        <h2><span class="themeColor">About</span> Me</h2>
-        <div class="about_data">
-          <div class="img">
-            <img src="assets/img/frontend-Engineer.webp" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My About</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="about">
+    <div class="iconLN" onclick="iconLight()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+        <path
+          d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </svg>
+    </div>
+    <div class="iconLN2" onclick="iconNight()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon-stars-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+      </svg>
+    </div>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="protfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.facebook.com/share/p/1De448JNhv/">Blog</a></li>
+          </ul>
+          <div class="nav_toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
           </div>
-          <div class="about_me">
-            <p class="my_description">
-              I'm Sibgatullah, a Passionate
-              <span class="themeColor">Frontend Engineer</span> with a Diploma
-              in
-              <span class="themeColor">Computer Science and Engineering</span>.
-              I specialize in building clean, responsive, and user-friendly web applications.
-              I have strong expertise in writing clean and efficient <span class="themeColor">RAW Frontend Code</span>, ensuring high performance and scalability.
-              Also, I am skilled in <b>Shopify theme development and customization</b>.
-              <br><br>
+          <div class="nav_toggle2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </div>
+        </nav>
+      </header>
+      <h2><span class="themeColor">About</span> Me</h2>
+      <div class="about_data">
+        <div class="img">
+          <img class="image-one" src="assets/img/frontend-developer.webp" alt="Frontend Engineer Sibgatullah" />
+          <img class="image-two" src="assets/img/sibgatullah-fronend-engineer.webp"
+            alt="Frontend Engineer Sibgatullah" />
+          <svg class="image-two image-two-text" viewBox="0 0 400 400">
+            <defs>
+              <path id="circlePath" d="M200,200 m-180,0 a180,180 0 1,1 360,0 a180,180 0 1,1 -360,0" />
+            </defs>
+            <text fill="#ffffff" letter-spacing="8">
+              <textPath href="#circlePath">
+                Sibgatullah • Frontend • Engineer • Sibgatullah • Frontend • Engineer •
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="about_me">
+          <p class="my_description">
+            I'm Sibgatullah, a Passionate
+            <span class="themeColor">Frontend Engineer</span> with a Diploma
+            in
+            <span class="themeColor">Computer Science and Engineering</span>.
+            I specialize in building clean, responsive, and user-friendly web applications.
+            I have strong expertise in writing clean and efficient <span class="themeColor">RAW Frontend Code</span>,
+            ensuring high performance and scalability.
+            Also, I am skilled in <b>Shopify theme development and customization</b>.
+            <br><br>
 
-              <span class="themeColor">Shopify Engineer — Softvence Agency</span><br>
-              • Delivered high-quality Shopify projects for worldwide clients ensuring responsive design, performance, and client satisfaction.<br>
-              • Resolved complex Shopify issues including dynamic content, sections, blocks, and theme customization.<br>
-              • Built custom Shopify themes from scratch focusing on scalability, clean code, and modern design.<br>
+            <span class="themeColor">Shopify Engineer — Softvence Agency</span><br>
+            • Delivered high-quality Shopify projects for worldwide clients ensuring responsive design, performance, and
+            client satisfaction.<br>
+            • Resolved complex Shopify issues including dynamic content, sections, blocks, and theme customization.<br>
+            • Built custom Shopify themes from scratch focusing on scalability, clean code, and modern design.<br>
 
-              <br>
+            <br>
 
-              <span class="themeColor">Software Engineer Intern — W3 Engineers Ltd.</span><br>
-              • Developed and customized projects using raw coding with a focus on performance and clean code practices.<br>
-              • Resolved issues across 271+ websites, improving functionality, performance, and user experience.<br>
-              • Worked on globally live projects, gaining real-world problem-solving and scalable development experience.
-            </p>
-            <div class="me_dtl">
-              <div>
-                <p>Birthdate : <span>January 2003</span></p>
-                <p>Nationality : <span>Bangladeshi</span></p>
-                <p>Experiences : <span>3 Years</span></p>
-              </div>
-              <div>
-                <p>Phone : <span>+880 16017-06606</span></p>
-                <p>Address : <span>Badda, Dhaka, Bangladesh</span></p>
-                <p>Email : <span>sibgatullah667@gmail.com</span></p>
-              </div>
+            <span class="themeColor">Software Engineer Intern — W3 Engineers Ltd.</span><br>
+            • Developed and customized projects using raw coding with a focus on performance and clean code
+            practices.<br>
+            • Resolved issues across 271+ websites, improving functionality, performance, and user experience.<br>
+            • Worked on globally live projects, gaining real-world problem-solving and scalable development experience.
+          </p>
+          <div class="me_dtl">
+            <div>
+              <p>Birthdate : <span>January 2003</span></p>
+              <p>Nationality : <span>Bangladeshi</span></p>
+              <p>Experiences : <span>3 Years</span></p>
             </div>
-            <div class="btn" onclick="DownloadCV()">
-              <a
-                href="assets/cv/Frontend-EngineerSibgatullah.pdf"
-                download="Sibgatullah-Frontend-Engineer"
-                >Download CV</a
-              >
-            </div><br>
-            <div class="skills">
-              <!-- <h1 style="text-align: center;">My <span class="themeColor">Skills</span></h1>
+            <div>
+              <p>Phone : <span>+880 16017-06606</span></p>
+              <p>Address : <span>Badda, Dhaka, Bangladesh</span></p>
+              <p>Email : <span>sibgatullah667@gmail.com</span></p>
+            </div>
+          </div>
+          <div class="btn" onclick="DownloadCV()">
+            <a href="assets/cv/Frontend-EngineerSibgatullah.pdf" download="Sibgatullah-Frontend-Engineer">Download
+              CV</a>
+          </div><br>
+          <div class="skills">
+            <!-- <h1 style="text-align: center;">My <span class="themeColor">Skills</span></h1>
               <br /> -->
-              <div class="skill_range">
+            <div class="skill_range">
               <div>
                 <h3>HTML5</h3>
                 <div class="skill_ber">
@@ -211,11 +197,12 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <script defer src="assets/js/custom.js"></script>
-  </body>
+  </div>
+  <script defer src="assets/js/custom.js"></script>
+</body>
+
 </html>
